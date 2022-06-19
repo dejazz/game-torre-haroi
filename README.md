@@ -10,6 +10,8 @@
           />
           <figcaption>Exemplo: Torre de hanoi.</figcaption>
         </figure>
+        <h1>Link do site</h1>
+        -url: https://game-torre-haroi.vercel.app/
     <h1>Tecnologias utilizadas</h1>
       <ul>
         <li>Javascript</li>
