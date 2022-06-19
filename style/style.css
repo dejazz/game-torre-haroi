@@ -1,0 +1,342 @@
+
+body{
+    color: white;
+    background-color: black;
+}
+p{
+    display:flex;
+    font-size: 24px;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+div{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+button{
+    border: 1px solid white;
+    background: transparent;
+    color:white;
+    cursor: pointer;
+    border-radius:7px;
+    font-size: 20px;
+    margin: 5px;
+    width: 140px;
+    height: 40px;
+
+}
+button:hover{
+    background-color: red;
+    border: 2px solid white; 
+}
+
+.escondido{
+    display: none;
+}
+#box-vitoria{
+   
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    position:absolute;
+    padding: 15px;
+    width: 200px;
+    height: 350px;
+    top: 200px;
+    left: 40px;
+
+}
+img{
+    width:200px;
+
+}
+#vitoria{
+    font-size: 35px;
+    text-align: center;
+    background-color: black;
+    
+
+}
+#hanoi-content{
+    display:flex;
+    
+    border: 1px dashed white;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-image: url('/img/background_hanoi.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95vw;
+    height: 60vh;
+
+}
+#contador{
+    text-align: left;
+    margin-left: 3px;
+    font-size: 20px;
+}
+
+.torre{
+    display:flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-left:10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 7vw;
+    height: 30vh;
+
+    cursor: pointer;
+    border: 2px solid white;
+    border-bottom: none;
+    background:linear-gradient(to right,#0f0c29,#302b63,#24243e);
+}
+
+.torreStart{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+.discos{
+    position: relative;
+    height: 20px;
+    border-radius: 7px;
+    margin-left: 0;
+    border: 2px solid white;
+    background: linear-gradient(to right, #ad5389, #3c1053);
+}
+
+.disco1{
+    width: 10vw;
+}
+
+.disco2{
+    width: 16vw;
+}
+
+.disco3{
+    width: 22vw;
+}
+
+.disco4{
+    width: 28vw
+}
+
+.disco5{
+    width: 34vw;
+}
+
+@media (min-width: 375px){
+    button{
+        width:169px;
+        
+    }
+p{
+    font-size: 22px;
+
+}
+#box-vitoria{
+    width: 260px;
+    height: 350px;
+    padding: 15px;
+    top: 250px;
+    left: 38px;
+}
+img{
+    width: 250px;
+    margin-left: 5px;
+}
+.disco1{
+    width: 10vw;
+    height: 30px;
+}
+
+.disco2{
+    width: 16vw;
+    height: 30px;
+}
+
+.disco3{
+    width: 22vw;
+    height: 30px;
+}
+
+.disco4{
+    width: 28vw;
+    height: 30px;
+}
+
+.disco5{
+    width: 34vw;
+    height: 30px;
+}
+}
+
+@media (min-width: 425px){
+    button{
+        width:193px;
+        
+    }
+p{
+    font-size: 24px;
+
+}  #box-vitoria{
+
+    width:310px;
+    top: 250px;
+    
+}
+img{
+    width: 300px;
+}
+}
+
+@media (min-width: 768px){
+    button{
+        width: 170px;
+        margin-left: 5px;
+    }
+    p{
+        font-size: 24px;
+    }  
+    #box-vitoria{
+
+    width:310px;
+    top: 300px;
+    left: 180px;
+    
+    }   
+ 
+    #contador{
+        font-size: 24px
+    }
+    .discos{
+        border-radius: 12px;
+    }
+    
+    .disco1{
+        width: 10vw;
+        height: 40px;
+    }
+    
+    .disco2{
+        width: 16vw;
+        height: 40px;
+    }
+    
+    .disco3{
+        width: 22vw;
+        height: 40px;
+    }
+    
+    .disco4{
+        width: 28vw;
+        height: 40px;
+    }
+    
+    .disco5{
+        width: 34vw;
+        height: 40px;
+    }  
+
+    .torre{
+        height: 30vh;
+    }
+}
+
+@media (min-width: 1024px){
+    #box-vitoria{
+
+        left: 330px;
+        
+        }   
+     
+}
+@media (min-width: 1440px){
+    button{
+        font-size: 25px;
+        width: 150px;
+        height: 50px;
+    }
+    p{
+        font-size: 25px;
+        padding-top: 10px;
+        align-items: flex-end;
+    }
+    .torre{
+        width: 85px;
+        height: 500px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        
+    }
+    .discos{
+        border: 3px solid white;
+    }
+
+    #box-vitoria{
+
+        
+        height: 370px;
+        left: 38vw;
+        
+        }   
+    img{
+        width: 300px;
+        }
+    .disco1{
+        width: 6vw;
+        height: 80px;
+    }
+    
+    .disco2{
+        width: 10vw;
+        height: 80px
+    }
+    
+    .disco3{
+        width: 14vw;
+        height: 80px
+    }
+    
+    .disco4{
+        width: 18vw;
+        height: 80px
+    }
+    
+    .disco5{
+        width: 22vw;
+        height: 80px
+    }  
+
+    #hanoi-content{
+        width: 97vw;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #comandos{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+    #vitoria{
+        width: 450px;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 2000px){
+    #box-vitoria{
+
+        
+        height: 370px;
+        left: 42vw;
+        
+        }   
+}
